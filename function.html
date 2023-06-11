@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Практика. Функції</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*function showHi() {
+  let hi = 'Привіт всім від Функції!'; //Локальна функція
+  alert( hi ); 
+}
+showHi (); 
+alert(hi); 
+
+let userName = 'ДокторХто';
+function showHi() {
+  let hi = 'Привіт тобі, '+ userName + ', від Функції!'; // зовнішня змінна
+  alert( hi );
+}
+showHi ();
+let userName = 'ДокторХто';
+function showHi() {
+  let userName = 'КапітанОчевидність';
+  let hi = 'Привіт тобі, '+ userName + ', від Функції!'; // зовнішня змінна
+  alert( hi );
+}
+showHi (); 
+alert(userName); //  'ДокторХто' НЕ змінився на 'КапітанОчевидність';
+*/
+alert("Завдання 1. Степінь")
+function square() {
+	let x =+prompt("Введіть число x", "");
+	let n =+prompt("Введіть число n", "");
+	let result;
+	alert(result=x**n);
+}
+square()
+
+alert("Завдання 2. Факторіал")
+function factorial() {
+	let number =+prompt("Введіть число n", "");
+	let factorial; 
+	let i = 0; 	
+	
+		do{
+		factorial=number*i
+		i++
+	}
+	while(i<number)
+	
+alert("!n="+number*i);
+}
+factorial();
+
+alert("Завдання 3. Квадратне рівняння")
+let a=+prompt("Введіть значення a", "");
+	let b=+prompt("Введіть значення b", "");
+	let c=+prompt("Введіть значення c", "");
+	let x1=(-b+Math.sqrt(b*b-4*a*c))/(2*a);
+let x2=(-b-Math.sqrt(b*b-4*a*c))/(2*a);
+function equation() {
+
+	let D = b*b-4*a*c;
+	alert(D);
+	if (D<0) {
+		return alert("Рівняння розв'язків немає");
+	}
+	else if (D>0) {
+		alert("Рівняння має 2 розв'язки");
+		return D
+	}
+	else if (D==0) {
+		alert("Рівняння має 1 розв'язок");
+		return D
+	}
+}
+document.writeln("x1="+x1 , " x2="+x2);
+
+equation()
+</script>
+</body>
+</html>

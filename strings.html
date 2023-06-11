@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Числа</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function spam() {
+	let protect = prompt("Введіть рядок")
+	protect = protect.toLowerCase()
+	if(!!~protect.indexOf("безкоштовно") ||!!~protect.indexOf("гарантія")) {
+		alert("true");
+	}
+	else {
+		alert("false");
+	}
+}
+spam()
+	function number() {
+	let number = +prompt("Введіть ціле число.", "")
+	let sum = 0;
+for(let i = 1; i<=number; i++) {
+	document.writeln(i)
+	sum = sum + i
+	if(i % 2 == 0) {
+		document.writeln(i)
+	}
+}
+
+
+document.write("<br>")
+
+	document.write("Сума: "+sum)
+}
+number()
+
+
+</script>
+</body>
+</html>

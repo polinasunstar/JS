@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p style="font-size: 50px; color: green">Task №3 "An evil Bank"</p>
+<script type="text/javascript">
+let money= +prompt("Яку суму Ви хочете зняти? (мінімальна банкнота 50 гривень)", "");
+if (money < 50 || money > 10000) {
+		alert("На жаль, Ви можете зняти гроші на суму від 50 грн. до 10000 грн");
+	}
+      else if (money % 50 ==0) {
+		alert("Заберіть Ваші гроші у сумі "+money+" гривень.");
+	}
+else  {
+	alert("Ви отримуєте грошей стільки, скільки я можу дати, а 5 гривень я залишу собі.");
+	}
+</script>
+</body>
+</html>

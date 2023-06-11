@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Switch case</title>
+</head>
+<body>
+<script type="text/javascript">
+	let count = +prompt('Скільки буде 2*2?', 0);
+
+switch (count) {
+  case 3:
+ 
+ 	alert('Якось мало' );
+    break;
+  case 4:
+    alert( 'Правильно!' );
+    break;
+  case 5:
+ 	alert('Багато' );
+    break;
+  default:
+    alert( 'Я не вмію рахувати' );
+    break;
+}
+switch (count) {
+  case 3:
+  case 5:
+ 	alert('Неправильно' );
+    break;
+  case 4:
+    alert( 'Правильно!' );
+    break;
+ 
+ 	alert('Багато' );
+    break;
+  default:
+    alert( 'Я не вмію рахувати' );
+    break;
+}
+let countX= +prompt("Введіть число від 5 до 10", "");
+switch (countX) {
+case 5: 
+alert( "5" );
+break;
+case 6:
+alert("6");
+break;
+default:
+alert("Неправильне число");
+break;
+
+}
+
+</script>
+</body>
+</html>
